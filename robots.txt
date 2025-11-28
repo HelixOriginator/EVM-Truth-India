@@ -1,0 +1,37 @@
+# robots.txt – EVM Truth India – Dharmayudh Data Room
+# Allows full indexing by Google and all good bots
+# Created by Kallol Chakrabarti
+
+User-agent: *
+Allow: /
+
+# Explicitly allow all important folders
+Allow: /takedowns/
+Allow: /judgments/
+Allow: /memes/
+Allow: /assets/
+Allow: /shastra.md
+Allow: /tracker.md
+
+# Sitemap location (Google loves this)
+Sitemap: https://helixoriginator.github.io/EVM-Truth-India/sitemap.xml
+
+# Block nothing – we want maximum visibility & truth to spread
+# (No Disallow lines = everything is allowed)
+
+# Optional: speed up crawling (Google respects this)
+Crawl-delay: 10
+
+# Good bots only (extra safety)
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 5
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
